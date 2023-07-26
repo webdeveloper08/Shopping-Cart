@@ -1,0 +1,566 @@
+/* --------------------------Header------------------------------ */
+header {
+  margin: 1.5rem 4%;
+}
+
+.head img {
+  width: 132px;
+}
+
+header .btn {
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  bottom: 7px;
+}
+
+.sign-up-btn {
+  background-color: #0AAD0A;
+  display: flex;
+  color: white;
+}
+.sIn{
+  position: relative;
+  bottom: 24px;
+}
+.sUp{
+  position: relative;
+  bottom: 24px;
+}
+
+.loc-bar span, .loc-bar button, .loc-bar input {
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+/*---------------  homepage -------------*/
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #fff;
+  color: #000;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  left: 20px;
+  top: 10px;
+  border-radius: 10px;
+  display: inline-block;
+     z-index: 2;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+.main-pg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: right center;
+  background-image: url("https://d2d8wwwkmhfcva.cloudfront.net/x856/d2guulkeunn7d8.cloudfront.net/assets/homepage/homepage_background_full_m3_cropped-8d2d286263821da7decd7c61fb1db1eb0e3dec13e0c356277d6d3cb7484c024a.jpg");
+  background-color: rgb(222, 237, 214);
+  max-height: 400px;
+  position: absolute;
+}
+
+.content {
+  width: 35%;
+  line-height: 1.5;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* --------------------------Features Page------------------------------ */
+.features-intro {
+  padding-top: 415px;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  font-size: 32px;
+  color: #495057;
+}
+
+.features-mob {
+  display: none;
+}
+
+.features-web {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 22rem;
+  display: inline-block;
+  border: none;
+  margin: 0.7rem;
+}
+
+.card-body {
+  padding: 2.5rem;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  background-color: #F6F7F8;
+}
+
+.card-img {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.card-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.start-btn {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.shopping-btn {
+  background-color: #0AAD0A;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 0.8rem 5rem;
+  font-weight: 400;
+}
+
+/* --------------------------Advertisement Page------------------------------ */
+.adv-img {
+  width: 65%;
+  display: block;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.adv-img-mob {
+  display: none;
+}
+
+.adv {
+  width: 65%;
+  display: flex;
+  margin: auto;
+}
+
+.adv-box {
+  padding: 1rem;
+  margin: 0.3rem;
+  display: inline-block;
+  width: 25%;
+  background-color: #F6F7F8;
+  border-radius: 12px;
+}
+
+/* --------------------------Common Questions ------------------------------ */
+.accordion {
+  width: 60%;
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  outline: none;
+  font-size: 26px;
+  font-weight: 400;
+  transition: 0.4s;
+  margin-left: 20%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom-width: 0.5px;
+  padding: 2rem 1rem;
+}
+
+.accordion span {
+  display: inline-block;
+  width: 80%;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  width: 60%;
+  margin-left: 20%;
+  padding: 0 18px;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* --------------------------Department Web------------------------------ */
+.dept-web {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.dept-web img {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.dept h6 {
+  display: inline-block;
+}
+
+.dept {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.app-icon {
+  margin-left: 18px;
+}
+
+.app-adv {
+  margin-left: 2.5%;
+}
+
+/* --------------------------Department I-pad & Mobile------------------------------ */
+.dept-mob {
+  display: none;
+}
+
+/* -------------------------Footer------------------------------ */
+footer {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.row p {
+  font-weight: 500;
+}
+
+.disclamer {
+  margin-left: 6%;
+  margin-right: 6%;
+  font-size: 12px;
+  color: #444;
+}
+
+.social-media {
+  margin-left: auto;
+}
+
+.row {
+  margin-left: 5%;
+}
+
+.lgl {
+  margin-right: 15%;
+  float: left;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1250px) and (min-width: 900px) {
+
+  /* --------------------------Department I-pad & Mobile------------------------------ */
+  .dept-web {
+    display: none;
+  }
+
+  .dept-mob {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .m-app-adv {
+    float: left;
+  }
+
+  .accordion-button {
+    font-weight: 500;
+  }
+
+  .dept-mob img, .dept-mob h6 {
+    display: inline-block;
+  }
+
+  .dept-mob h6 {
+    margin-right: 18px;
+  }
+
+  .accordion-body {
+    font-size: 16px;
+  }
+
+  .accordion-flush {
+    margin-left: 30%;
+    position: relative;
+    bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 650px) {
+  .content {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .content h1 {
+    width: 60%;
+  }
+
+  .content p {
+    display: none;
+  }
+
+  .head img {
+    width: 30%;
+  }
+
+  .intro {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 32px;
+    color: #495057;
+  }
+
+  .features-web {
+    display: none;
+  }
+
+  .features-mob {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .m-card {
+    flex: 0 0 auto;
+    width: 45%;
+    margin: 0.1rem;
+  }
+
+  .card-body {
+    padding: 2.5rem;
+  }
+
+  .adv-img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+  }
+
+  .adv, .accordion, .panel {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  .adv-box {
+    display: block;
+    width: 100%;
+    background-color: #F6F7F8;
+    border-radius: 12px;
+  }
+
+  .dept-web {
+    display: none;
+  }
+
+  .dept-mob {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .accordion-button {
+    font-weight: 500;
+  }
+
+  .dept-mob img, .dept-mob h6 {
+    display: inline-block;
+  }
+
+  .dept-mob h6 {
+    margin-right: 18px;
+  }
+
+  .accordion-body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .content h1 {
+    width: 60%;
+  }
+
+  .content p {
+    display: none;
+  }
+
+  .head img {
+    width: 30%;
+  }
+
+  .intro {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 32px;
+    color: #495057;
+  }
+
+  .features-web {
+    display: none;
+  }
+
+  .features-mob {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .m-card {
+    flex: 0 0 auto;
+    width: 60%;
+    margin: 0.1rem;
+  }
+
+  .card-body {
+    padding: 2.5rem;
+  }
+
+  .intro {
+    font-size: 24px;
+  }
+
+  .adv-img {
+    display: none;
+  }
+
+  .adv-img-mob {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+
+  .adv, .accordion, .panel {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  .adv-box {
+    display: block;
+    width: 100%;
+    background-color: #F6F7F8;
+    border-radius: 12px;
+  }
+
+  .app-icon {
+    padding-bottom: 50px;
+  }
+
+  .dept-mob {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .dept-web {
+    display: none;
+  }
+
+  .accordion-button {
+    font-weight: 500;
+  }
+
+  .dept-mob img, .dept-mob h6 {
+    display: inline-block;
+  }
+
+  .dept-mob h6 {
+    margin-right: 18px;
+  }
+
+  .accordion-body {
+    font-size: 16px;
+  }
+}
